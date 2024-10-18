@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Information</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://storage.googleapis.com/bucketlabib/icon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Be Vietnam Pro", serif;
+            line-height: 1.6;
+            background-color: white;
+        }
+
+        header {
+            background-color: #5d89ef;
+            color: white;
+            padding: 0.5em 0;
+            text-align: center;
+        }
+
+        .profile {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5em 0;
+            position: relative;
+        }
+
+        .profile::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 4px;
+            margin-top: 10px;
+            background: repeating-linear-gradient(to right,
+                    rgb(0, 255, 251) 0,
+                    rgb(0, 255, 157) 30px,
+                    rgb(144, 0, 255) 30px,
+                    rgb(123, 0, 255) 60px,
+                    rgb(0, 255, 208) 80px,
+                    rgb(0, 255, 208) 100px);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1em;
+        }
+
+        .title {
+            font-size: 1.2em;
+            margin-top: 0.5em;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            padding: 2em 10em;
+            background-color: white;
+            margin: 1em 0;
+
+            p {
+                margin-bottom: 30px;
+            }
+        }
+
+        .story,
+        .personal-info {
+            width: 45%;
+        }
+
+        .story h3,
+        .personal-info h3 {
+            margin-bottom: 1em;
+            font-weight: bold;
+        }
+
+        .personal-info ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .personal-info li {
+            margin-bottom: 0.5em;
+            padding-bottom: 0.5em;
+            border-bottom: 1px solid #ccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2em;
+
+            .social-icons {
+                margin-top: 30px;
+            }
+        }
+
+        .social-icons img {
+            width: 40px;
+            margin: 0 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Personal Information</h1>
+    </header>
+
+    <section class="profile">
+        <img src="https://storage.googleapis.com/bucketlabib/sm.png" alt="Mohd Labib" class="profile-img">
+        <h2>Mohd Labib</h2>
+        <p class="title">Junior Web Developer</p>
+    </section>
+
+    <section class="info">
+        <div class="story">
+            <h3>My Story</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quia odit quibusdam quos alias obcaecati
+                dolores eius nostrum cupiditate fuga velit itaque consectetur, iste totam enim in blanditiis! Nisi,
+                nobis.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima quia odit quibusdam quos alias obcaecati
+                dolores eius nostrum cupiditate fuga velit itaque consectetur, iste totam enim in blanditiis! Nisi,
+                nobis.</p>
+        </div>
+        <div class="personal-info">
+            <h3>Personal Information</h3>
+            <ul>
+                <li>Age: <strong>20 years old</strong></li>
+                <li>Phone: <strong>+62-831-8573-XXX</strong></li>
+                <li>Email: <strong>MohdLabib@dicoding.com</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Find me in!</h3>
+        <div class="social-icons">
+            <a href="#"><img src="https://storage.googleapis.com/bucketlabib/github.png" alt="GitHub"></a>
+            <a href="#"><img src="https://storage.googleapis.com/bucketlabib/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="https://storage.googleapis.com/bucketlabib/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="https://storage.googleapis.com/bucketlabib/discord.png" alt="Discord"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
